@@ -7,8 +7,6 @@
 http://ec2-52-3-255-1.compute-1.amazonaws.com/  
 
 Frontend URL  
-If you get a CORS error disable it and allow http url using  
-settings of your browser  
 https://master.d3g8trqb4bccnl.amplifyapp.com/  
 
 
