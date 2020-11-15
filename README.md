@@ -81,7 +81,10 @@ Just run the frontend using steps mentioned above
 # CI/CD Pipeline
 
 Whenever you will commit in this repo AWS Amplify will automatically  
-build the frontend and deploy it
+build the frontend and deploy it  
+Before making the final commit make changes and commit in devlopment  
+it is not connected to CI/CD pipeline, the merge and build, development  
+will happen automatically  
 
 # Streaming  
   Work in Progress... Check back Later
