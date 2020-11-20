@@ -45,7 +45,7 @@ const MovieState = (props) => {
   const searchMovies = async (text) => {
     //console.log(text)
     setLoading();
-    const res = await axios.get(`https://cors-anywhere.herokuapp.com/http://ec2-52-3-255-1.compute-1.amazonaws.com/Movies/api/movies?Title=${text}`
+    const res = await axios.get(`https://cors-anywhere.herokuapp.com/http://ec2-52-72-32-138.compute-1.amazonaws.com/Movies/api/movies?Title=${text}`
     );
     console.log(res.data.data);
     dispatch({
@@ -72,7 +72,7 @@ const MovieState = (props) => {
   const getMovie = async (id) => {
     setLoading();
     const res = await axios.get(
-      `https://cors-anywhere.herokuapp.com/http://ec2-52-3-255-1.compute-1.amazonaws.com/Movies/api/movies/id/${id}`
+      `https://cors-anywhere.herokuapp.com/http://ec2-52-72-32-138.compute-1.amazonaws.com/Movies/api/movies/id/${id}`
     );
     console.log(res.data.data);
 
@@ -87,7 +87,7 @@ const MovieState = (props) => {
   const getAllMovie = async () => {
     setLoading();
     const res = await axios.get(
-      `https://cors-anywhere.herokuapp.com/http://ec2-52-3-255-1.compute-1.amazonaws.com/Movies/api/movies`
+      `https://cors-anywhere.herokuapp.com/http://ec2-52-72-32-138.compute-1.amazonaws.com/Movies/api/movies`
     );
     console.log(res.data.data);
 
