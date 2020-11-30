@@ -4,15 +4,14 @@
 
 [![Actions Status](https://github.com/devops-project-netflix/Netflix-Clone/workflows/CI/badge.svg)](https://github.com/devops-project-netflix/Netflix-Clone/actions)
 
-http://ec2-52-72-32-138.compute-1.amazonaws.com/ 
+http://ec2-52-72-32-138.compute-1.amazonaws.com/
 
 Frontend URL  
-https://master.d3g8trqb4bccnl.amplifyapp.com/  
+https://master.d3g8trqb4bccnl.amplifyapp.com/
 
+# Refer to below repo for backend
 
-
-# Refer to below repo for backend  
-https://github.com/devops-project-netflix/Netflix-Clone  
+https://github.com/devops-project-netflix/Netflix-Clone
 
 # Completed Tasks
 
@@ -56,7 +55,7 @@ Elasticsearch
 MongoDB  
 Docker  
 Github  
-AWS Amplify  
+AWS Amplify
 
 Milestones  
 Swagger functioning endpoints w tests  
@@ -69,22 +68,29 @@ User Accounts
 The Frontend is independent, and deployed on AWS amplify
 Locally:  
 Clone the Repo
- `npm install`  
+`npm install`  
  `npm start`  
  Demo Application running on AWS Amplify server  
- https://master.d3g8trqb4bccnl.amplifyapp.com/  
-   
+ https://master.d3g8trqb4bccnl.amplifyapp.com/
+
 # Integration
 
 The Integration of the frontend is complete with the backend  
-Just run the frontend using steps mentioned above  
+Just run the frontend using steps mentioned above
+
 # CI/CD Pipeline
 
 Whenever you will commit in this repo AWS Amplify will automatically  
 build the frontend and deploy it  
 Before making the final commit make changes and commit in devlopment  
 it is not connected to CI/CD pipeline, the merge and build, development  
-will happen automatically  
+will happen automatically
 
-# Streaming  
-  Work in Progress... Check back Later
+# Local Docker Setup
+
+To build a docker image and run it do ./docker.sh from the root  
+Go to http://localhost:3000
+
+# Streaming
+
+Work in Progress... Check back Later
