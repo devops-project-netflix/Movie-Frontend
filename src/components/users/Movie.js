@@ -1,7 +1,7 @@
-import React, { Fragment, useEffect, useContext } from "react";
-import Spinner from "../layout/Spinner";
-import { Link } from "react-router-dom";
-import MovieContext from "../../context/movie/movieContext";
+import React, { Fragment, useEffect, useContext } from 'react';
+import Spinner from '../layout/Spinner';
+import { Link } from 'react-router-dom';
+import MovieContext from '../../context/movie/movieContext';
 
 const Movie = ({ match }) => {
   const movieContext = useContext(MovieContext);
@@ -24,7 +24,7 @@ const Movie = ({ match }) => {
     vote_average,
     vote_count,
     budget,
-    tagline
+    tagline,
   } = movie;
   let movieImageUrl = 'https://image.tmdb.org/t/p/original/' + backdrop_path;
 
@@ -32,35 +32,30 @@ const Movie = ({ match }) => {
 
   return (
     <Fragment>
-      <Link to="/" className="btn btn-light">
+      <Link to='/' className='btn btn-light'>
         Back To Search
       </Link>
-      
-      <div className="card grid-2">
-        <div className="all-center">
+
+      <div className='card grid-2'>
+        <div className='all-center'>
           <img
             src={movieImageUrl}
-            className="square-img"
-            alt=""
-            style={{ width: "250px" }}
+            className='square-img'
+            alt=''
+            style={{ width: '250px' }}
           />
           <h1>{Title}</h1>
           <p> {tagline}</p>
         </div>
         <div>
-    
-            <Fragment>
-              <p>{Description}</p>
-            </Fragment>
-        
-          <a href={movieImageUrl} className="btn btn-dark my-1">
+          <Fragment>
+            <p>{Description}</p>
+          </Fragment>
+
+          <a href={poster_path} className='btn btn-dark my-1'>
             Play
           </a>
           <ul>
-
-
-
-
             <li>
               {homepage && (
                 <Fragment>
@@ -71,11 +66,11 @@ const Movie = ({ match }) => {
           </ul>
         </div>
       </div>
-      <div className="card text-center">
-        <div className="badge badge-primary">Rating: {vote_average}</div>
-        <div className="badge badge-success">Votes: {vote_count}</div>
-        <div className="badge badge-light">Status: {status}</div>
-        <div className="badge badge-dark">Budget in $: {budget}</div>
+      <div className='card text-center'>
+        <div className='badge badge-primary'>Rating: {vote_average}</div>
+        <div className='badge badge-success'>Votes: {vote_count}</div>
+        <div className='badge badge-light'>Status: {status}</div>
+        <div className='badge badge-dark'>Budget in $: {budget}</div>
       </div>
     </Fragment>
   );
